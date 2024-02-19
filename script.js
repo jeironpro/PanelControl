@@ -31,9 +31,12 @@ document.getElementById('menu-burger').addEventListener('click', function() {
     var icono = menuBurger.querySelector('.menu-burger i');
     var tituloBar = document.getElementById('titulo-bar');
     var logoBar = document.getElementById('logo-bar');
+    var header = document.querySelector('header');
 
     if (menuNavegacion.style.display === 'none') {
         menuNavegacion.style.display = 'block';
+        header.style.width = '';
+        header.style.height = '';
         menuBurger.style.left = '';
         menuBurger.style.padding = '';
         menuBurger.style.position = '';
@@ -44,6 +47,8 @@ document.getElementById('menu-burger').addEventListener('click', function() {
         tituloBar.style.display = 'none';
     } else {
         menuNavegacion.style.display = 'none';
+        header.style.width = '1024px';
+        header.style.height = 'fit-content';
         menuBurger.style.boxSizing = 'border-box';
         menuBurger.style.left = '0';
         menuBurger.style.marginLeft = '10px';

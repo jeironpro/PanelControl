@@ -8,14 +8,11 @@ body {
 header {
     background-color: #9900ff;
     border-radius: 0 5px 5px 0;
+    display: block;
+    height: 100%;
     left: 0;
     position: absolute;
     top: 0;
-}
-
-nav {
-    display: block;
-    height: 100%;
     width: 250px;
 }
 
@@ -157,6 +154,10 @@ nav {
 }
 
 @media screen and (max-width: 500px) {
+    .menu-burger .fa-x {
+        font-size: 20px;
+    }
+
     .menu-burger .fa-bars {
         font-size: 22px;
     }
@@ -169,5 +170,13 @@ nav {
     #titulo-bar {
         font-size: 23px;
         margin: -3px;
+    }
+
+    .logo-titulo {
+        margin-top: 15px;
+    }
+
+    .menu li {
+        padding: 29px 10px;
     }
 }

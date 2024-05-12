@@ -66,7 +66,7 @@ header {
     cursor: pointer;
     font-size: 18px;
     font-weight: 600;
-    padding: 20px 10px;
+    padding: 22.5px 10px;
     position: relative;
 }
 
@@ -178,6 +178,6 @@ header {
     }
 
     .menu li {
-        padding: 29px 10px;
+        padding: 23px 10px;
     }
 }
